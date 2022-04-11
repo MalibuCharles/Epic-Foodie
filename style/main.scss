@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;  
+}
+.container{
+    width: calc(100% - 120px);
+    margin: auto;
+}
+
+header{
+    .logo{
+        h1{
+            font-weight: 300;
+            span{
+                font-weight: 600;
+                color: hotpink;
+            }
+        }
+    }
+.container{
+    display: flex;
+    align-items: center;
+}
+.searchBar{
+    margin-left: auto;
+}
+.header-option{
+    padding-left: 5rem;
+    letter-spacing: 0.6px;
+}
+.currentDetails, 
+.searchBar{
+    display: flex;
+}
+}
+
+.options{
+    padding: 1.2rem 0;
+    .options-btn{
+        background: grey ;
+        padding: 0.8rem 1rem;
+        border-radius: 30px;
+        border: 0;
+        font-size: 1rem;
+        font-family: sans-serif;
+        letter-spacing: 0.6px;
+        &.selected{
+            background: black;
+            color: white;
+        }
+    }
+}
+
+.listings{
+    .header{
+        display: flex;
+        align-items: center;
+        .header-title{
+            h2{
+                font-weight: 400;
+                font-size: 1.7rem;
+                margin-bottom: 0.5rem;
+            }
+            span{
+                color: rgb(92, 91, 91);
+            }
+        }
+        .header-viewOptions {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            .viewAll{
+                color:hotpink;
+                padding-right: 2rem;
+            }
+            .viewMore{
+                .arrow{
+                    width: 40px;
+                    height: 40px;
+                    background: turquoise;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: hotpink;
+                    opacity: 0.3;
+                    transition: all 0.2s ease-in-out;
+                    cursor: pointer;
+                    &.darker, 
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

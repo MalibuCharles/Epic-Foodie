@@ -1,0 +1,127 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+
+header .logo h1 {
+  font-weight: 300;
+}
+
+header .logo h1 span {
+  font-weight: 600;
+  color: hotpink;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .searchBar {
+  margin-left: auto;
+}
+
+header .header-option {
+  padding-left: 5rem;
+  letter-spacing: 0.6px;
+}
+
+header .currentDetails,
+header .searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.options {
+  padding: 1.2rem 0;
+}
+
+.options .options-btn {
+  background: grey;
+  padding: 0.8rem 1rem;
+  border-radius: 30px;
+  border: 0;
+  font-size: 1rem;
+  font-family: sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.options .options-btn.selected {
+  background: black;
+  color: white;
+}
+
+.listings .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listings .header .header-title h2 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.listings .header .header-title span {
+  color: #5c5b5b;
+}
+
+.listings .header .header-viewOptions {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.listings .header .header-viewOptions .viewAll {
+  color: hotpink;
+  padding-right: 2rem;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow {
+  width: 40px;
+  height: 40px;
+  background: turquoise;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: hotpink;
+  opacity: 0.3;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.listings .header .header-viewOptions .viewMore .arrow.darker, .listings .header .header-viewOptions .viewMore .arrow:hover {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
