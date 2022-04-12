@@ -66,6 +66,10 @@ header .searchBar {
   color: white;
 }
 
+.listings {
+  padding: 2rem 0;
+}
+
 .listings .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,6 +83,7 @@ header .searchBar {
   font-weight: 400;
   font-size: 1.7rem;
   margin-bottom: 0.5rem;
+  margin-top: 0;
 }
 
 .listings .header .header-title span {
@@ -93,6 +98,7 @@ header .searchBar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto 0 auto auto;
 }
 
 .listings .header .header-viewOptions .viewAll {
@@ -104,16 +110,12 @@ header .searchBar {
   width: 40px;
   height: 40px;
   background: turquoise;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
   background: hotpink;
   opacity: 0.3;
   -webkit-transition: all 0.2s ease-in-out;
@@ -123,5 +125,73 @@ header .searchBar {
 
 .listings .header .header-viewOptions .viewMore .arrow.darker, .listings .header .header-viewOptions .viewMore .arrow:hover {
   opacity: 1;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.listing-grid .listing-grid-element {
+  width: 33%;
+  margin-top: 2rem;
+}
+
+.listing-grid .listing-grid-element .image {
+  height: 240px;
+  overflow: hidden;
+}
+
+.listing-grid .listing-grid-element .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.listing-grid .listing-grid-element .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem 0;
+}
+
+.listing-grid .listing-grid-element .text h3 {
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+  margin-top: 0;
+}
+
+.listing-grid .listing-grid-element .text span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #5c5b5b;
+}
+
+.listing-grid .listing-grid-element .text .rating {
+  margin: auto 0 auto auto;
+  height: 100%;
+}
+
+.listing-grid .listing-grid-element .text .rating span {
+  height: 40px;
+  width: 40px;
+  background: gray;
+  font-size: 1rem;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */
