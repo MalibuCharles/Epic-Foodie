@@ -1,4 +1,4 @@
-alert('Welcome')
+// alert('Welcome')
 
 window.onload = () => {
     const listings = Array.from(document.getElementsByClassName('listings'))
@@ -18,7 +18,38 @@ const handleSlider = listing => {
         return
     }
 
-    arrowRight.addEventListener('click', e =>{
-        // prevent default button behavior 
+    arrowCircleRight.addEventListener('click', e =>{
+        // prevent default button behavior
+        e.preventDefault()
+
+        handleClassChange('right')
+        
+        listingsGrid.scrollTo({
+            left: listingsGrid.offsetWidth,
+            behaviour: 'smooth'
+        })
     })
+
+    arrowCircleLeft.addEventListener('click', e => {
+        // prevent default button behavior
+        e.preventDefault()
+
+        handleClassChange('left')
+        
+        listingsGrid.scrollTo({
+            left: 0,
+            behaviour: 'smooth'
+        })
+    })
+
+    const handleClassChange = direction => {
+
+        if (direction == 'right') {
+            arrowCircleRight.classList.remove('darker')
+            arrowCircleLeft.classList.add('darker')
+        } else if (direction == 'left'){
+            arrowLeft.classList.remove('darker')
+            arrowRight.classList.add('darker')
+        }
+    }
 }
