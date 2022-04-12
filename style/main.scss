@@ -4,7 +4,7 @@
 
 
 body{
-    margin: 0;
+    margin: 40px;
     font-family: sans-serif;  
 }
 .smallText{
@@ -12,8 +12,9 @@ body{
     font-weight: 300;
 }
 .container{
-    width: calc(100% - 120px);
+    width: 100%;
     margin: auto;
+    align-items: center;
 }
 
 header{
@@ -36,10 +37,16 @@ header{
 .header-option{
     padding-left: 5rem;
     letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+}
+svg {
+    margin-right: 1rem;
+    display: inline-flex;
 }
 .currentDetails, 
 .searchBar{
-    display: flex;
+    display: inline-flex;
 }
 }
 
@@ -53,6 +60,12 @@ header{
         font-size: 1rem;
         font-family: sans-serif;
         letter-spacing: 0.6px;
+        display: inline-flex;
+        align-items: center;
+        svg{
+            max-width: 20;
+            margin-right: 0.4rem;
+        }
         &.selected{
             background: black;
             color: white;

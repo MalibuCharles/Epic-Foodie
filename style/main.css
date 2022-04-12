@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 40px;
   font-family: sans-serif;
 }
 
@@ -14,8 +14,11 @@ body {
 }
 
 .container {
-  width: calc(100% - 120px);
+  width: 100%;
   margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .logo h1 {
@@ -43,13 +46,26 @@ header .searchBar {
 header .header-option {
   padding-left: 5rem;
   letter-spacing: 0.6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header svg {
+  margin-right: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 header .currentDetails,
 header .searchBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .options {
@@ -64,6 +80,17 @@ header .searchBar {
   font-size: 1rem;
   font-family: sans-serif;
   letter-spacing: 0.6px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options .options-btn svg {
+  max-width: 20;
+  margin-right: 0.4rem;
 }
 
 .options .options-btn.selected {
